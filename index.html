@@ -12,16 +12,16 @@
   </head>
   <body class="font-inter">
     <!-- start: Navbar -->
-    <nav class="py-4 bg-yellow-100 relative group/navbar navbar [&.navbar-active]:bg-white md:[&.navbar-active]:bg-yellow-100 z-30">
+    <nav
+      class="py-4 bg-yellow-100 relative group/navbar navbar [&.navbar-active]:bg-white md:[&.navbar-active]:bg-yellow-100 z-30"
+    >
       <div class="container xl:max-w-6xl px-4 mx-auto">
         <div class="flex items-center">
-          <a href="#" class="text-3xl font-black tracking-tight font-onset"
+          <a href="#" class="text-3xl font-black tracking-tight font-onest"
             >Todo</a
           >
           <ul
-            class="md:flex md:items-center md:space-x-8 md:mx-auto absolute md:static top-full left-0 w-full md:w-auto bg-white 
-            md:bg-transparent divide-y divide-gray-200 md:divide-y-0 hidden group-[.navbar-active]/navbar:block 
-            md:group-[.navbar-active]/navbar:flex"
+            class="md:flex md:items-center md:space-x-8 md:mx-auto absolute md:static top-full left-0 w-full pb-4 md:pb-0 md:w-auto bg-white md:bg-transparent divide-y divide-gray-200 md:divide-y-0 hidden group-[.navbar-active]/navbar:block md:group-[.navbar-active]/navbar:flex"
           >
             <li class="relative group/navbar-item">
               <a
@@ -32,12 +32,22 @@
                 <span>About</span>
                 <i class="ri-arrow-down-s-line"></i>
               </a>
-              <ul class="md:absolute top-full left-1/2 md:-translate-x-1/2 md:translate-y-5 md:w-40 bg-white md:border-2 border-black rounded-md py-1 hidden group-[.active]/navbar-item:block list-disc md:list-none pl-8 md:pl-0 marker:text-green-800">
+              <ul
+                class="md:absolute top-full left-1/2 md:-translate-x-1/2 md:translate-y-6 md:w-40 bg-white md:border-2 border-black rounded-md py-1 hidden group-[.active]/navbar-item:block list-disc md:list-none pl-8 md:pl-0 marker:text-green-800"
+              >
                 <li>
-                    <a href="#" class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block">Company</a>
+                  <a
+                    href="#"
+                    class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block"
+                    >Company</a
+                  >
                 </li>
                 <li>
-                    <a href="#" class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block">Our team</a>
+                  <a
+                    href="#"
+                    class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block"
+                    >Our team</a
+                  >
                 </li>
               </ul>
             </li>
@@ -68,7 +78,7 @@
           </div>
           <button
             type="button"
-            class="w-10 h-10 flex items-center justify-center text-lg ml-3 md:hidden border-2 rounded-md border-transparent hover:bg-white hover:border-black group-[.navbar-active]/navbar:bg-white group-[.navbar-active]/navbar:border-black"
+            class="w-10 h-10 flex items-center justify-center text-lg ml-3 md:hidden border-2 border-transparent rounded-md hover:bg-white hover:border-black group-[.navbar-active]/navbar:bg-white group-[.navbar-active]/navbar:border-black"
             data-toggle="navbar"
           >
             <i class="ri-menu-line"></i>
@@ -79,7 +89,65 @@
     <!-- end: Navbar -->
 
     <!-- start: Header -->
+    <header class="bg-yellow-100 py-16">
+      <div class="container xl:max-w-6xl px-4 mx-auto">
+        <div class="relative text-center">
+          <h2
+            class="text-sm font-onest font-semibold text-green-800 tracking-tight text-center mb-2"
+          >
+            Effortless Work Management
+          </h2>
+          <h2
+            class="text-4xl sm:text-5xl font-onest font-bold tracking-tight leading-tight sm:leading-tight max-w-lg mx-auto text-center mb-4"
+          >
+            Streamline Your Work, Simplify Your Life
+          </h2>
+          <p
+            class="text-gray-500 max-w-sm mx-auto text-center leading-normal text-lg tracking-tight mb-6"
+          >
+            Organize, prioritize, collaborate, and boost productivity
+            effortlessly with Todo.
+          </p>
+          <a
+            href="#"
+            class="py-3 px-6 inline-flex items-center space-x-2 text-lg bg-black rounded-md text-white font-semibold tracking-tight border-2 border-black hover:bg-white hover:text-black hover:shadow-bottom"
+          >
+            <span>Get Started</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+          <img
+            src="dist/img/user-1.jpeg"
+            alt=""
+            class="absolute top-0 left-28 w-32 h-32 rounded-full border-2 border-black shadow-bottom object-cover hidden lg:block"
+          />
+          <img
+            src="dist/img/user-2.jpg"
+            alt=""
+            class="absolute top-48 left-48 w-24 h-24 rounded-full border-2 border-black shadow-bottom object-cover hidden lg:block"
+          />
+          <img
+            src="dist/img/user-2.jpg"
+            alt=""
+            class="absolute top-0 right-28 w-32 h-32 rounded-full border-2 border-black shadow-bottom object-cover hidden lg:block"
+          />
+          <img
+            src="dist/img/user-1.jpeg"
+            alt=""
+            class="absolute top-48 right-48 w-24 h-24 rounded-full border-2 border-black shadow-bottom object-cover hidden lg:block"
+          />
+          <img
+            src="dist/img/hero.jpg"
+            alt=""
+            class="w-full block max-w-5xl mx-auto rounded-xl border-2 border-black shadow-bottom mt-16"
+          />
+        </div>
+      </div>
+    </header>
     <!-- end: Header -->
+
+    <!-- start: Partner -->
+
+    <!-- end: Partner -->
     <script src="dist/js/script.js"></script>
   </body>
 </html>
